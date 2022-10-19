@@ -39,7 +39,7 @@ class PostDetailsViewModel @Inject constructor(
                     when (response.exception) {
                         is HttpException -> _errorMessageSharedFlow.emit("Something went wrong. Please try again")
                         is UnknownHostException -> _errorMessageSharedFlow.emit("Unable to get comments. Please check your internet connection and try again")
-                        is IOException -> _errorMessageSharedFlow.emit("Network Failure")
+                        is IOException -> _errorMessageSharedFlow.emit("Network Failure. Please try again")
                         else -> _errorMessageSharedFlow.emit("Something went wrong. Please try again")
                     }
                 }
