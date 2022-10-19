@@ -3,7 +3,6 @@ package com.ebenezer.gana.jsonplaceholdersample.ui.postDetails
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ebenezer.gana.jsonplaceholdersample.data.models.CommentItem
-import com.ebenezer.gana.jsonplaceholdersample.data.models.PostItem
 import com.ebenezer.gana.jsonplaceholdersample.data.repository.JsonPlaceholderRepository
 import com.ebenezer.gana.jsonplaceholdersample.utils.Result
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -31,10 +30,10 @@ class PostDetailsViewModel @Inject constructor(
     val errorMessageSharedFlow = _errorMessageSharedFlow.asSharedFlow()
 
 
-    fun getComments(postId:Int){
+    fun getComments(postId: Int) {
         _commentResult.value = Result.Loading()
         viewModelScope.launch {
-            when(val response = repository.getComment(postId)){
+            when (val response = repository.getComment(postId)) {
                 is Result.Error -> {
                     when (response.exception) {
                         is HttpException -> _errorMessageSharedFlow.emit("Something went wrong. Please try again")
