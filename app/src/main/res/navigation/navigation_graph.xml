@@ -7,7 +7,20 @@
 
     <fragment
         android:id="@+id/postsFragment"
-        android:name="com.ebenezer.gana.jsonplaceholdersample.ui.PostsFragment"
+        android:name="com.ebenezer.gana.jsonplaceholdersample.ui.postList.PostsFragment"
         android:label="Posts"
-        tools:layout="@layout/fragment_posts" />
+        tools:layout="@layout/fragment_posts" >
+        <action
+            android:id="@+id/action_postsFragment_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postDetailsFragment"
+        android:name="com.ebenezer.gana.jsonplaceholdersample.ui.postDetails.PostDetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_post_details">
+        <argument
+            android:name="postItem"
+            app:argType="com.ebenezer.gana.jsonplaceholdersample.data.models.PostItem" />
+    </fragment>
 </navigation>

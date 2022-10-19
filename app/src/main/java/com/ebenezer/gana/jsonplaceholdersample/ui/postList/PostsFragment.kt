@@ -1,4 +1,4 @@
-package com.ebenezer.gana.jsonplaceholdersample.ui
+package com.ebenezer.gana.jsonplaceholdersample.ui.postList
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ebenezer.gana.jsonplaceholdersample.databinding.FragmentPostsBinding
 import com.ebenezer.gana.jsonplaceholdersample.ui.adapters.PostsListAdapter
@@ -55,8 +56,9 @@ class PostsFragment : Fragment() {
     }
 
     private fun setupAdapter() {
-        postsListAdapter = PostsListAdapter {
-
+        postsListAdapter = PostsListAdapter { postItem ->
+            val action = PostsFragmentDirections.actionPostsFragmentToPostDetailsFragment(postItem)
+            findNavController().navigate(action)
         }
     }
 

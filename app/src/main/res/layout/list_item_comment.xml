@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="@color/black"
+        tools:text="et expedita est odit" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:lineSpacingExtra="@dimen/line_spacing"
+        android:textAlignment="textStart"
+        android:textAppearance="?attr/textAppearanceBody1"
+        tools:text="Rosanna_Kunze@guy.net" />
+
+    <TextView
+        android:id="@+id/comment_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:lineSpacingExtra="@dimen/line_spacing"
+        android:textAlignment="textStart"
+        android:textAppearance="?attr/textAppearanceBody1"
+        tools:text="cum natus qui dolorem dolorum nihil ut nam tempore\nmodi nesciunt ipsum hic\nrem sunt possimus earum magnam similique aspernatur sed\ntotam sed voluptatem iusto id iste qui" />
+
+</LinearLayout>
+

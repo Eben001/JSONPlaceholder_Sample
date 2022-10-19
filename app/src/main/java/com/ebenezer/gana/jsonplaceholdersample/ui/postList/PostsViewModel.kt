@@ -1,4 +1,4 @@
-package com.ebenezer.gana.jsonplaceholdersample.ui
+package com.ebenezer.gana.jsonplaceholdersample.ui.postList
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
