@@ -1,8 +1,5 @@
 package com.ebenezer.gana.jsonplaceholdersample.utils
 
-class Constants {
-    companion object{
+object Constants {
         const val BASE_URL = "https://jsonplaceholder.typicode.com"
-
-    }
 }

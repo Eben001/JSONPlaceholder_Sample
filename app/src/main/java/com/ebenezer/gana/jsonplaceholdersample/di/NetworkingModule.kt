@@ -1,7 +1,7 @@
 package com.ebenezer.gana.jsonplaceholdersample.di
 
 import com.ebenezer.gana.jsonplaceholdersample.data.network.api.JsonPlaceholderApi
-import com.ebenezer.gana.jsonplaceholdersample.utils.Constants.Companion.BASE_URL
+import com.ebenezer.gana.jsonplaceholdersample.utils.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
