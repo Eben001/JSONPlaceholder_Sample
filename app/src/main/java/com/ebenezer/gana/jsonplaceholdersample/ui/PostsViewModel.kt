@@ -29,6 +29,9 @@ class PostsViewModel @Inject constructor(
     private val _errorMessageSharedFlow = MutableSharedFlow<String>()
     val errorMessageSharedFlow = _errorMessageSharedFlow.asSharedFlow()
 
+    init {
+        getPosts()
+    }
     fun getPosts() {
         _postsResult.value = Result.Loading()
         viewModelScope.launch {

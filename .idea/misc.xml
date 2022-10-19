@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HP/AndroidStudioProjects/JSONPlaceholderSample/app/src/main/res/layout/activity_main.xml" value="0.14895833333333333" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/JSONPlaceholderSample/app/src/main/res/layout/fragment_posts.xml" value="0.190625" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/JSONPlaceholderSample/app/src/main/res/layout/fragment_posts.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/JSONPlaceholderSample/app/src/main/res/layout/list_item_post.xml" value="0.33" />
       </map>
     </option>
   </component>
