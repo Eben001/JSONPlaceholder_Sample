@@ -27,5 +27,5 @@ A sample app for testing API from https://jsonplaceholder.typicode.com/
 - Network error handling
 
 ## Screenshots
-
+![Untitled design](https://user-images.githubusercontent.com/54691862/196637581-eae4e0dd-81bd-4305-aca0-014ff77b2f08.png)
 
